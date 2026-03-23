@@ -1,0 +1,49 @@
+import { useState } from "react";
+import { NAVLINKS_DATA } from "../../../../config/navLinks.data";
+import { RxCross2 } from "react-icons/rx";
+import { BiMenu } from "react-icons/bi";
+
+const MobileNavbar = () => {
+    const navTitle: string = 'DevSphere';
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+
+    return (
+        <>
+            <nav className="md:hidden w-full fixed top-0 left-0 z-50 bg-black/70 backdrop-blur-xl border-b border-white/10">
+
+                <div className="px-6 py-4 flex items-center justify-between">
+                    {/* Title */}
+                    <a href="/" className="text-2xl font-bold tracking-tight font-mono text-white">
+                        {navTitle}
+                    </a>
+
+                    {/* Menu Icon */}
+                    <button onClick={() => setIsOpen(!isOpen)}>
+                        {isOpen ? <RxCross2 className="text-blue-400 text-3xl font-bolder cursor-pointer" /> : <BiMenu className="text-blue-400 text-3xl font-bolder cursor-pointer" />}
+                    </button>
+                </div>
+
+                {/* Menu links */}
+
+            </nav>
+
+            {
+                isOpen && (
+                    <div className="flex flex-col gap-6 px-6 py-2 border border-blue-200 rounded-xl mt-17 bg-[#101923]">
+                        {NAVLINKS_DATA.map((link, idx) => (
+                            <a
+                                key={idx}
+                                href={link.path}
+                                className={`text-base font-mono text-gray-300 hover:text-yellow-400 transition`}>
+                                {link.label}
+                            </a>
+                        ))}
+                    </div>
+                )
+            }
+        </>
+
+    )
+}
+
+export default MobileNavbar;
