@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NAVLINKS_DATA } from "../../../../config/navLinks.data";
 import { RxCross2 } from "react-icons/rx";
 import { BiMenu } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const MobileNavbar = () => {
     const navTitle: string = 'DevSphere';
@@ -31,12 +32,12 @@ const MobileNavbar = () => {
                 isOpen && (
                     <div className="flex flex-col gap-6 px-6 py-2 border border-blue-200 rounded-xl mt-17 bg-[#101923]">
                         {NAVLINKS_DATA.map((link, idx) => (
-                            <a
+                            <Link
                                 key={idx}
-                                href={link.path}
+                                to={link.path}
                                 className={`text-base font-mono text-gray-300 hover:text-yellow-400 transition`}>
                                 {link.label}
-                            </a>
+                            </Link>
                         ))}
                     </div>
                 )
