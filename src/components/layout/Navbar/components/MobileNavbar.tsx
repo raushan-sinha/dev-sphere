@@ -2,11 +2,12 @@ import { useState } from "react";
 import { NAVLINKS_DATA } from "../../../../config/navLinks.data";
 import { RxCross2 } from "react-icons/rx";
 import { BiMenu } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const MobileNavbar = () => {
     const navTitle: string = 'DevSphere';
     const [isOpen, setIsOpen] = useState<boolean>(false);
+    const location = useLocation();
 
     return (
         <>
@@ -35,7 +36,8 @@ const MobileNavbar = () => {
                             <Link
                                 key={idx}
                                 to={link.path}
-                                className={`text-base font-mono text-gray-300 hover:text-yellow-400 transition`}>
+                                onClick={() => setIsOpen(false)}
+                                className={`text-base font-mono text-gray-300 hover:text-yellow-400 transition ${location.pathname === link.path ? 'text-yellow-400' : ''}`}>
                                 {link.label}
                             </Link>
                         ))}
