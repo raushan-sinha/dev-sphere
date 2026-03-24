@@ -15,9 +15,9 @@ const MobileNavbar = () => {
 
                 <div className="px-6 py-4 flex items-center justify-between">
                     {/* Title */}
-                    <a href="/" className="text-2xl font-bold tracking-tight font-mono text-white">
+                    <Link to="/" className="text-2xl font-bold tracking-tight font-mono text-white">
                         {navTitle}
-                    </a>
+                    </Link>
 
                     {/* Menu Icon */}
                     <button onClick={() => setIsOpen(!isOpen)}>

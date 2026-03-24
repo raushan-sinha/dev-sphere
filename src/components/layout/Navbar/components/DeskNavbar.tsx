@@ -10,9 +10,9 @@ const DeskNavbar = () => {
             <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
 
                 {/* Title */}
-                <a href='/' className="text-2xl font-bold tracking-tight cursor-pointer font-mono text-white">
+                <Link to='/' className="text-2xl font-bold tracking-tight cursor-pointer font-mono text-white">
                     {navTitle}
-                </a>
+                </Link>
 
                 {/* Links */}
                 <div className="hidden md:flex items-center gap-10">
