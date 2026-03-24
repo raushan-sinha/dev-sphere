@@ -1,4 +1,4 @@
-import type { NavbarLinks } from "../types/navTypes";
+import type { NavbarLinks } from "../types/navTypes.types";
 
 export const NAVLINKS_DATA: NavbarLinks[] = [
     { label: 'Product', path: '/product' },
