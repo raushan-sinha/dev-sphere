@@ -15,13 +15,13 @@ const MobileNavbar = () => {
 
                 <div className="px-6 py-4 flex items-center justify-between">
                     {/* Title */}
-                    <Link to="/" className="text-2xl font-bold tracking-tight font-mono bg-gradient-to-r from-red-500 via-blue-500 via-green-500 to-yellow-500 bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient">
+                    <Link to="/" className="text-3xl font-bold tracking-tight font-mono bg-gradient-to-r from-red-500 via-blue-500 via-green-500 to-yellow-500 bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient">
                         {navTitle}
                     </Link>
 
                     {/* Menu Icon */}
                     <button onClick={() => setIsOpen(!isOpen)}>
-                        {isOpen ? <RxCross2 className="text-blue-400 text-3xl font-bolder cursor-pointer" /> : <BiMenu className="text-blue-400 text-3xl font-bolder cursor-pointer" />}
+                        {isOpen ? <RxCross2 className="text-amber-400 text-4xl font-bolder cursor-pointer" /> : <BiMenu className="text-amber-400 text-4xl font-bolder cursor-pointer" />}
                     </button>
                 </div>
 
