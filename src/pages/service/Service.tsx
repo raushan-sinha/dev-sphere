@@ -1,5 +1,5 @@
 
-const Services = () => {
+const Service = () => {
     return (
         <div>
             <h1 className='mt-30'>Services</h1>
@@ -7,4 +7,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default Service
