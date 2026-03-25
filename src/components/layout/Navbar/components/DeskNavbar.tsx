@@ -13,7 +13,7 @@ const DeskNavbar = () => {
                 {/* Title */}
                 <Link
                     to="/"
-                    className="text-3xl font-bold tracking-tight font-mono bg-gradient-to-r from-red-500 via-blue-500 via-green-500 to-yellow-500 bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient">
+                    className="text-4xl font-bold tracking-tight font-mono bg-gradient-to-r from-red-500 via-blue-500 via-green-500 to-yellow-500 bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient">
                     {navTitle}
                 </Link>
 
@@ -23,7 +23,7 @@ const DeskNavbar = () => {
                         <Link
                             key={idx}
                             to={link.path}
-                            className={`relative group text-gray-300 hover:text-yellow-400 font-medium transition hover:underline hover:underline-offset-4 font-mono ${location.pathname === link.path ? 'text-yellow-400' : ''}`}>
+                            className={`relative group text-gray-300 hover:text-yellow-400 transition hover:underline hover:underline-offset-4 text-xl font-mono ${location.pathname === link.path ? 'text-yellow-400' : ''}`}>
                             {link.label}
                         </Link>
                     ))}
