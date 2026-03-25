@@ -15,7 +15,7 @@ const MobileNavbar = () => {
 
                 <div className="px-6 py-4 flex items-center justify-between">
                     {/* Title */}
-                    <Link to="/" className="text-2xl font-bold tracking-tight font-mono text-white">
+                    <Link to="/" className="text-2xl font-bold tracking-tight font-mono bg-gradient-to-r from-red-500 via-blue-500 via-green-500 to-yellow-500 bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient">
                         {navTitle}
                     </Link>
 
