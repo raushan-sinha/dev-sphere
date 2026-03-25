@@ -31,7 +31,7 @@ const MobileNavbar = () => {
 
             {
                 isOpen && (
-                    <div className="flex flex-col gap-6 px-6 py-2 border border-blue-200 rounded-xl mt-17 bg-[#101923]">
+                    <div className="flex flex-col gap-6 px-6 py-2 border border-blue-200 rounded-xl mt-18 bg-[#101923]">
                         {NAVLINKS_DATA.map((link, idx) => (
                             <Link
                                 key={idx}
