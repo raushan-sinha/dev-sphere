@@ -2,9 +2,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "../components/layout/Navbar/Navbar";
 import Home from "../pages/home/Home";
 import Product from "../pages/product/Product";
-import Service from "../pages/service/Service";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
+import Service from "../pages/service/Service";
 
 export default function AppRoutes() {
     return (
