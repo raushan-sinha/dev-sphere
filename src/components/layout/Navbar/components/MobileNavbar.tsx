@@ -11,7 +11,7 @@ const MobileNavbar = () => {
 
     return (
         <>
-            <nav className="md:hidden w-full fixed top-0 left-0 z-50 bg-black/70 backdrop-blur-xl border-b border-white/10">
+            <nav className="md:hidden fixed top-1 inset-x-0 z-50 mx-auto w-[95%] bg-[#101923] backdrop-blur-2xl rounded-xl">
 
                 <div className="px-6 py-4 flex items-center justify-between">
                     {/* Title */}
@@ -31,7 +31,7 @@ const MobileNavbar = () => {
 
             {
                 isOpen && (
-                    <div className="flex flex-col gap-6 px-6 py-2 border border-blue-200 rounded-xl mt-18 bg-[#101923]">
+                    <div className="flex flex-col gap-6 px-6 py-2 border border-blue-200 rounded-xl mt-18 bg-[#101923] inset-x-0 z-50 mx-auto w-[95%]">
                         {NAVLINKS_DATA.map((link, idx) => (
                             <Link
                                 key={idx}
