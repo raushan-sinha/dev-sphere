@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+/* Navbar title animation */
+.gradient-text {
+    background: linear-gradient(90deg,
+            #6366f1,
+            #a855f7,
+            #ec4899,
+            #6366f1);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: gradientMove 6s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 300% 50%;
+    }
+}
