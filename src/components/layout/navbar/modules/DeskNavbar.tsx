@@ -9,7 +9,7 @@ const DeskNavbar = () => {
             className="hidden md:flex fixed top-2 sm:top-3 lg:top-4 inset-x-0 z-50 mx-auto w-[95%] max-w-7xl items-center justify-between px-6 py-3 rounded-xl bg-[#101923] backdrop-blur-xl border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.4)]">
             {/* Left - Logo */}
             <div className="flex items-center gap-2">
-                <a href="/" className="text-gray-300 text-2xl font-sans font-bold tracking-wide cursor-pointer">
+                <a href="/" className="text-gray-300 text-2xl font-sans font-bold tracking-wide cursor-pointer gradient-text">
                     {title}
                 </a>
             </div>
