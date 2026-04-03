@@ -1,6 +1,7 @@
 import { Menu, Bedtime, Clear, Sunny } from "@mui/icons-material";
 import { useState } from "react";
 import { useTheme } from "../../../../hook/useTheme";
+import { Link } from "react-router-dom";
 
 const title: string = "DevSphereOS";
 
@@ -14,11 +15,11 @@ const MobileNavbar = () => {
       aria-label="Mobile Navigation"
       className="md:hidden fixed top-2 inset-x-0 z-50 mx-auto w-[95%] flex items-center justify-between px-4 py-3 rounded-xl bg-[#101923] backdrop-blur-md border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.4)]">
       {/* Left - Title */}
-      <a
-        href="/"
+      <Link
+        to="/"
         className="text-gray-300 text-lg font-sans font-bold tracking-wide gradient-text focus:outline-none">
         {title}
-      </a>
+      </Link>
 
       {/* Right - Controls */}
       <div className="flex items-center gap-3">
