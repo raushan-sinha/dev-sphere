@@ -1,10 +1,12 @@
-import { Menu, Bedtime, Clear } from "@mui/icons-material";
+import { Menu, Bedtime, Clear, Sunny } from "@mui/icons-material";
 import { useState } from "react";
+import { useTheme } from "../../../../hook/useTheme";
 
 const title: string = "DevSphereOS";
 
 const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const { theme, setTheme } = useTheme();
 
   return (
     <nav
@@ -32,8 +34,14 @@ const MobileNavbar = () => {
         </button>
 
         {/* Theme Icon */}
-        <div className="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 border border-white/10">
-          <Bedtime className="text-white" />
+        <div
+          className="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 border border-white/10"
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+          {theme === "light" ? (
+            <Bedtime className="text-white cursor-pointer" />
+          ) : (
+            <Sunny className="text-amber-500 cursor-pointer" />
+          )}
         </div>
 
         {/* Profile */}
