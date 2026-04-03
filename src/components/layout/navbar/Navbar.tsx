@@ -1,7 +1,5 @@
-import DeskNavbar from "./modules/DeskNavbar";
-import MobileNavbar from "./modules/MobileNavbar";
+import { DeskNavbar, MobileNavbar } from "./modules";
 
-// DesktopNavbar.tsx
 export default function Navbar() {
     return (
         <>
