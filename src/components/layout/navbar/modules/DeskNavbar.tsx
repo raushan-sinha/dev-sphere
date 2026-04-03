@@ -1,13 +1,15 @@
 import { Bedtime, Sunny } from "@mui/icons-material";
 import { navLinks } from "../../../../config/navLinksData";
-import { memo, } from "react";
+import { memo } from "react";
 import { useLocation } from "react-router-dom";
+import { useTheme } from "../../../../hook/useTheme";
 
 // Navbar title -
 const title: string = "DevSphereOS";
 
 const DeskNavbar = memo(() => {
     const location = useLocation();
+    const { theme, setTheme } = useTheme();
 
     return (
         <nav
@@ -31,11 +33,13 @@ const DeskNavbar = memo(() => {
 
             {/* Right - Controls */}
             <div className="flex items-center gap-4">
-
                 {/* Theme Toggle */}
-                <button className="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 cursor-pointer hover:bg-white/10 transition">
-                    <Bedtime className="text-white cursor-pointer" />
-                    <Sunny className="text-amber-500 cursor-pointer" />
+                <button className="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 cursor-pointer hover:bg-white/10 transition" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+                    {theme === 'light' ? (
+                        <Bedtime className="text-white cursor-pointer" />
+                    ) : (
+                        <Sunny className="text-amber-500 cursor-pointer" />
+                    )}
                 </button>
 
                 {/* Profile */}
