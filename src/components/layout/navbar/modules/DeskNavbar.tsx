@@ -1,6 +1,6 @@
 import { Bedtime, Sunny } from "@mui/icons-material";
 import { navLinks } from "../../../../config/navLinksData";
-import { memo } from "react";
+import { memo, } from "react";
 import { useLocation } from "react-router-dom";
 
 // Navbar title -
@@ -33,10 +33,10 @@ const DeskNavbar = memo(() => {
             <div className="flex items-center gap-4">
 
                 {/* Theme Toggle */}
-                <div className="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 cursor-pointer hover:bg-white/10 transition">
+                <button className="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 cursor-pointer hover:bg-white/10 transition">
                     <Bedtime className="text-white cursor-pointer" />
                     <Sunny className="text-amber-500 cursor-pointer" />
-                </div>
+                </button>
 
                 {/* Profile */}
                 <div className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-400 cursor-pointer text-white">
