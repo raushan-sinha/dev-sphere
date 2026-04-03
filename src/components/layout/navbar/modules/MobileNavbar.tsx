@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useTheme } from "../../../../hook/useTheme";
 import { Link, useLocation } from "react-router-dom";
 import { navLinks } from "../../../../config/navLinksData";
+import DevImage from "../../../../assets/dev.png";
 
 const title: string = "DevSphereOS";
 
@@ -49,8 +50,13 @@ const MobileNavbar = () => {
           </div>
 
           {/* Profile */}
-          <div className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-400 text-white text-sm font-semibold">
-            R
+          <div className="w-9 h-9 rounded-full overflow-hidden cursor-pointer border border-white/10 hover:scale-105 transition">
+            <img
+              src={DevImage}
+              alt="user profile"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
         </div>
       </nav>
