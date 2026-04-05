@@ -4,6 +4,7 @@ import { useTheme } from "../../../../hook/useTheme";
 import { Link, useLocation } from "react-router-dom";
 import { navLinks } from "../../../../config/navLinksData";
 import DevImage from "../../../../assets/dev.png";
+import { ProfileBoard } from "../../ui/ProfileBoard";
 
 const title: string = "DevSphereOS";
 
@@ -11,6 +12,7 @@ const MobileNavbar = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const { theme, setTheme } = useTheme();
     const location = useLocation();
+    const [isProfileBoardOpen, setIsProfileBoardOpen] = useState(false);
 
     return (
         <>
@@ -50,7 +52,7 @@ const MobileNavbar = () => {
                     </div>
 
                     {/* Profile */}
-                    <div className="w-9 h-9 rounded-full overflow-hidden cursor-pointer border border-white/10 hover:scale-105 transition">
+                    <div className="w-9 h-9 rounded-full overflow-hidden cursor-pointer border border-white/10 hover:scale-105 transition" onClick={() => setIsProfileBoardOpen(true)}>
                         <img
                             src={DevImage}
                             alt="user profile"
@@ -58,6 +60,8 @@ const MobileNavbar = () => {
                             loading="lazy"
                         />
                     </div>
+
+                    {isProfileBoardOpen && <ProfileBoard onClose={() => setIsProfileBoardOpen(false)} />}
                 </div>
             </nav>
 
