@@ -1,16 +1,18 @@
 import { Bedtime, Sunny } from "@mui/icons-material";
 import { navLinks } from "../../../../config/navLinksData";
-import { memo } from "react";
+import { memo, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "../../../../hook/useTheme";
 import DevImage from '../../../../assets/dev.png';
+import { ProfileBoard } from "../../ui/ProfileBoard";
 
-// Navbar title -
+//TODO: Navbar title -
 const title: string = "DevSphereOS";
 
 const DeskNavbar = () => {
     const location = useLocation();
     const { theme, setTheme } = useTheme();
+    const [isProfileBoardOpen, setIsProfileBoardOpen] = useState(false);
 
     return (
         <nav
@@ -52,7 +54,7 @@ const DeskNavbar = () => {
                 </button>
 
                 {/* Profile */}
-                <div className="w-9 h-9 rounded-full overflow-hidden cursor-pointer border border-white/10 hover:scale-105 transition">
+                <div className="w-9 h-9 rounded-full overflow-hidden cursor-pointer border border-white/10 hover:scale-105 transition" onClick={() => setIsProfileBoardOpen(true)}>
                     <img
                         src={DevImage}
                         alt="user profile"
@@ -61,6 +63,8 @@ const DeskNavbar = () => {
                     />
                 </div>
             </div>
+
+            {isProfileBoardOpen && <ProfileBoard onClose={() => setIsProfileBoardOpen(false)} />}
         </nav>
     );
 };
