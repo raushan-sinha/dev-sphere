@@ -28,7 +28,7 @@ const ProfileBoard = ({ onClose }: ProfileBoardProps) => {
             <div className="relative w-full max-w-md rounded-2xl bg-[#0f0f0f] border border-white/10 shadow-2xl p-6 text-white">
 
                 {/* Close Icon */}
-                <button className="absolute top-4 right-4 text-gray-400 hover:text-white transition" onClick={onClose}>
+                <button className="absolute top-4 right-4 text-gray-400 hover:text-white transition cursor-pointer" onClick={onClose}>
                     ✕
                 </button>
 
@@ -58,7 +58,7 @@ const ProfileBoard = ({ onClose }: ProfileBoardProps) => {
 
                 {/* CTA Button */}
                 <div className="flex justify-center">
-                    <button className="px-6 py-2 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition">
+                    <button className="px-6 py-2 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition cursor-pointer">
                         View Portfolio
                     </button>
                 </div>
