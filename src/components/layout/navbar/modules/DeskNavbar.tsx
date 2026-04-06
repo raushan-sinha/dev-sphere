@@ -23,7 +23,7 @@ const DeskNavbar = () => {
             <div className="flex items-center gap-2">
                 <Link
                     to="/"
-                    className="text-gray-300 text-2xl font-sans font-bold tracking-wide cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-400">
+                    className="text-gray-300 text-2xl font-sans font-bold tracking-wide cursor-pointer gradient-text">
                     {title}
                 </Link>
             </div>
