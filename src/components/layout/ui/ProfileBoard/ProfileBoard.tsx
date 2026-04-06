@@ -25,14 +25,17 @@ const ProfileBoard = ({ onClose }: ProfileBoardProps) => {
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm">
 
             {/* Center Wrapper */}
-            <div className="flex min-h-[100dvh] items-center justify-center p-4">
+            <div className="flex min-h-[100dvh] items-center justify-center p-4" onClick={onClose}>
 
                 {/* Card */}
-                <div className="relative w-full max-w-md rounded-2xl bg-[#0f0f0f] border border-white/10 shadow-2xl p-6 text-white">
+                <div className="relative w-full max-w-md rounded-2xl bg-[#0f0f0f] border border-white/10 shadow-2xl px-6 pt-8 pb-6 text-white overflow-hidden">
+
+                    {/* 🔥 Animated Border Glow */}
+                    <div className="absolute inset-0 rounded-2xl pointer-events-none border border-transparent bg-[linear-gradient(120deg,rgba(255,255,255,0.15),rgba(255,255,255,0.02),rgba(255,255,255,0.15))] bg-[length:200%_200%] opacity-40 animate-[borderGlow_6s_linear_infinite]" />
 
                     {/* Close Icon */}
                     <button
-                        className="absolute top-4 right-4 text-gray-400 hover:text-white transition cursor-pointer"
+                        className="absolute top-5 right-5 text-gray-400 hover:text-white transition cursor-pointer"
                         onClick={onClose}>
                         ✕
                     </button>
@@ -44,8 +47,7 @@ const ProfileBoard = ({ onClose }: ProfileBoardProps) => {
 
                     {/* Short Para */}
                     <p className="text-gray-400 text-sm text-center leading-relaxed mb-6">
-                        Frontend Engineer focused on crafting high-performance, scalable UI
-                        experiences with modern web technologies. Building systems, not just screens.
+                        Frontend Engineer specializing in building scalable, high-performance web applications with a strong focus on UI/UX and system design. Experienced in React, modern JavaScript, and performance optimization, with a product-driven mindset toward crafting seamless user experiences. Passionate about transforming complex problems into elegant, production-ready solutions.
                     </p>
 
                     {/* Social Icons */}
