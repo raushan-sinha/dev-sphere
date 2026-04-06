@@ -1,73 +1,38 @@
-# React + TypeScript + Vite
+# DevSphereOS
+-------------
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### DevSphereOS is not just another UI project — it's built with a system-first mindset. In this website, users will find about me. I putted in this website about my Dashboard, Blogs, Projects.
 
-Currently, two official plugins are available:
+-----
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Goals for DevSphereOS :-
+1. Build a scalable frontend architecture
+2. Showcase industry-level UI/UX patterns
+3. Implement performance-first rendering strategies
+4. Maintain clean and modular code structure
+5. Prepare for real-world production environments
 
-## React Compiler
+------
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Tech Stack :-
+1. React + TypeScript
+2. Tailwind CSS
+3. Context API (for global state like theme)
+4. React Router (for navigation)
+5. Component-driven architecture
+6. MUI Icons
 
-## Expanding the ESLint configuration
+------
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 1. Navbar System — Architecture & Implementation 
+--------
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* Seamless navigation
+* Responsive adaptability for Mobiles, Tabs & Desktops
+* Consistent branding
+* Optimized rendering performance
+* Two files for better Navbar UI interfaces - DeskNavbar & MobileNavbar
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### * Navbar UI for Desktop -> [ Title  --  Links (Dashboard, Projects, Blog, Analytics)  --  Theme toggle icons (Dark & Light)  -- Profile icon ]
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### * Navbar UI for Mobile -> [ Title  --  Menu bar & Close icon with their Links  --  Theme toggle icons (Dark & Light)  -- Profile icon ]
