@@ -33,8 +33,7 @@ const ProfileBoard = ({ onClose }: ProfileBoardProps) => {
                     {/* Close Icon */}
                     <button
                         className="absolute top-4 right-4 text-gray-400 hover:text-white transition cursor-pointer"
-                        onClick={onClose}
-                    >
+                        onClick={onClose}>
                         ✕
                     </button>
 
@@ -55,13 +54,7 @@ const ProfileBoard = ({ onClose }: ProfileBoardProps) => {
                             const Icon = link.icon;
 
                             return (
-                                <a
-                                    key={link.name}
-                                    href={link.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="hover:scale-110 transition"
-                                >
+                                <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition">
                                     <Icon fontSize="medium" />
                                 </a>
                             );
