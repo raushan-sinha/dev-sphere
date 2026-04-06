@@ -11,12 +11,12 @@ const socialLinks: ProfileBoardSocialIcons[] = [
     {
         icon: Reddit,
         name: "Reddit",
-        url: "https://www.reddit.com/user/raushan-sinha"
+        url: "https://www.reddit.com/user/raushan_sinha2004/"
     },
     {
         icon: Code,
-        name: "LeetCode",
-        url: "https://leetcode.com/raushan-sinha"
+        name: "Dev.to",
+        url: "https://dev.to/raushan_sinha_8efb05c7b1c"
     }
 ]
 
@@ -35,7 +35,7 @@ const ProfileBoard = ({ onClose }: ProfileBoardProps) => {
 
                     {/* Close Icon */}
                     <button
-                        className="absolute top-5 right-5 text-gray-400 hover:text-white transition cursor-pointer"
+                        className="absolute top-3 right-5 text-gray-400 hover:text-white transition cursor-pointer"
                         onClick={onClose}>
                         ✕
                     </button>
