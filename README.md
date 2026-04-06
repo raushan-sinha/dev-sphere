@@ -22,7 +22,7 @@
 5. Component-driven architecture
 6. MUI Icons
 
-------
+----------------------------------
 
 ## 1. Navbar System — Architecture & Implementation 
 --------
@@ -36,3 +36,20 @@
 ### * Navbar UI for Desktop -> [ Title  --  Links (Dashboard, Projects, Blog, Analytics)  --  Theme toggle icons (Dark & Light)  -- Profile icon ]
 
 ### * Navbar UI for Mobile -> [ Title  --  Menu bar & Close icon with their Links  --  Theme toggle icons (Dark & Light)  -- Profile icon ]
+
+------------------------------------
+
+## 2. ProfileBoard UI component — 
+--------
+
+The Profile Board is a reusable, responsive modal component designed to showcase personal or professional information in a clean, modern UI. It is centered on the screen across all devices (desktop, tablet, mobile) and follows a production-grade modal interaction pattern. In this UI, you get about my information like Short para, Social links and View Portfolio button.
+
+### Features :-
+* Centered Modal Layout
+* Click outside & Cross icon the card → closes modal
+* Glassmorphism-inspired backdrop (blur + opacity)
+* Animated Border Glow
+* Optional ESC key support
+* Social Links Integration
+* Supports icon-based links (GitHub, Reddit, Dev.to, etc.)
+* “View Portfolio” button for navigation or redirection
