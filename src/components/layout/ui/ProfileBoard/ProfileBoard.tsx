@@ -1,7 +1,5 @@
-import { socialLinks } from "../../../../config/socialLinks.data";
+import { portfolioLink, socialLinks } from "../../../../config/socialLinks.data";
 import type { ProfileBoardProps } from "../../../../types/profileBoard.types";
-
-
 
 const ProfileBoard = ({ onClose }: ProfileBoardProps) => {
     return (
@@ -48,9 +46,9 @@ const ProfileBoard = ({ onClose }: ProfileBoardProps) => {
 
                     {/* CTA */}
                     <div className="flex justify-center">
-                        <button className="px-6 py-2 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition cursor-pointer">
+                        <a href={portfolioLink.url} target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition cursor-pointer">
                             View Portfolio
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
