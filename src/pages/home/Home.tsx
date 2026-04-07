@@ -1,7 +1,6 @@
 import { Button } from "@mui/material";
 import { Bolt } from "@mui/icons-material";
-import { HeroSection } from "./sections";
-import FeaturesSection from "./sections/FeaturesSection";
+import { FeatureSection, HeroSection, InteractiveSection } from "./sections";
 
 export default function Home() {
     return (
@@ -10,19 +9,10 @@ export default function Home() {
             <HeroSection />
 
             {/* Features Section */}
-            <FeaturesSection />
+            <FeatureSection />
 
             {/* Interactive Stats */}
-            <section className="px-6 py-20 bg-black/40">
-                <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-center">
-                    {stats.map((stat, i) => (
-                        <div key={i}>
-                            <h4 className="text-3xl font-bold text-blue-500">{stat.value}</h4>
-                            <p className="text-gray-400 mt-2">{stat.label}</p>
-                        </div>
-                    ))}
-                </div>
-            </section>
+            <InteractiveSection />
 
             {/* CTA Section */}
             <section className="px-6 py-20 text-center">
@@ -47,9 +37,4 @@ export default function Home() {
 
 
 
-const stats = [
-    { value: "10K+", label: "Developers Onboarded" },
-    { value: "500+", label: "Projects Built" },
-    { value: "99.9%", label: "Uptime" },
-    { value: "4.9/5", label: "User Satisfaction" },
-];
+
