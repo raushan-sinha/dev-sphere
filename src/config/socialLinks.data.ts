@@ -1,5 +1,5 @@
 import { GitHub, Reddit, Code } from "@mui/icons-material";
-import type { ProfileBoardSocialIcons } from "../types/profileBoard.types";
+import type { PortfolioLinkType, ProfileBoardSocialIcons } from "../types/profileBoard.types";
 
 //todo: Social links -
 export const socialLinks: ProfileBoardSocialIcons[] = [
@@ -19,3 +19,8 @@ export const socialLinks: ProfileBoardSocialIcons[] = [
         url: "https://dev.to/raushan_sinha_8efb05c7b1c"
     }
 ]
+
+//todo: Portfolio link -
+export const portfolioLink: PortfolioLinkType = {
+    url: 'https://raushan-dev-portfolio.vercel.app/'
+}
