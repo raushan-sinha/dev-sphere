@@ -3,7 +3,7 @@ import { statsData } from '../../../config/statsData.data'
 
 const InteractiveSection: React.FC = () => {
     return (
-        <section className="px-6 py-20 bg-black/40">
+        <section className="px-6 py-20">
             <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-center">
                 {statsData.map((item, idx) => (
                     <div key={idx}>
