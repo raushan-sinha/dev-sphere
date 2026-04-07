@@ -9,3 +9,7 @@ export interface ProfileBoardSocialIcons {
     name: string;
     url: string;
 }
+
+export interface PortfolioLinkType {
+    url: string;
+}
