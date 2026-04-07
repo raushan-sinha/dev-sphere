@@ -1,24 +1,7 @@
-import { GitHub, Reddit, Code } from "@mui/icons-material";
-import type { ProfileBoardProps, ProfileBoardSocialIcons } from "../../../../types/profileBoard.types";
+import { socialLinks } from "../../../../config/socialLinks.data";
+import type { ProfileBoardProps } from "../../../../types/profileBoard.types";
 
-//todo: Social links -
-const socialLinks: ProfileBoardSocialIcons[] = [
-    {
-        icon: GitHub,
-        name: "GitHub",
-        url: "https://github.com/raushan-sinha"
-    },
-    {
-        icon: Reddit,
-        name: "Reddit",
-        url: "https://www.reddit.com/user/raushan_sinha2004/"
-    },
-    {
-        icon: Code,
-        name: "Dev.to",
-        url: "https://dev.to/raushan_sinha_8efb05c7b1c"
-    }
-]
+
 
 const ProfileBoard = ({ onClose }: ProfileBoardProps) => {
     return (
