@@ -1,7 +1,7 @@
 # DevSphereOS
 -------------
 
-### DevSphereOS is not just another UI project — it's built with a system-first mindset. In this website, users will find about me. I putted in this website about my Dashboard, Blogs, Projects.
+### DevSphereOS is not just another UI project — it's built with a system-first mindset. In this website, users will find about me. I putted in this website about my Home, Blogs, Projects.
 
 -----
 
@@ -33,7 +33,7 @@
 * Optimized rendering performance
 * Two files for better Navbar UI interfaces - DeskNavbar & MobileNavbar
 
-### * Navbar UI for Desktop -> [ Title  --  Links (Dashboard, Projects, Blog, Analytics)  --  Theme toggle icons (Dark & Light)  -- Profile icon ]
+### * Navbar UI for Desktop -> [ Title  --  Links (Home, Projects, Blog, Analytics)  --  Theme toggle icons (Dark & Light)  -- Profile icon ]
 
 ### * Navbar UI for Mobile -> [ Title  --  Menu bar & Close icon with their Links  --  Theme toggle icons (Dark & Light)  -- Profile icon ]
 
