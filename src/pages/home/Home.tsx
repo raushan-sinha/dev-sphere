@@ -1,4 +1,4 @@
-import { CTASection, FeatureSection, HeroSection, InteractiveSection } from "./sections";
+import { CTASection, FeatureSection, FooterSection, HeroSection, InteractiveSection } from "./sections";
 
 export default function Home() {
     return (
@@ -16,9 +16,7 @@ export default function Home() {
             <CTASection />
 
             {/* Footer */}
-            <footer className="border-t border-gray-800 px-6 py-8 text-center text-gray-500 text-sm">
-                © DevSphereOS. All rights reserved.
-            </footer>
+            <FooterSection />
         </div>
     );
 }
