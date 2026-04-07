@@ -1,5 +1,3 @@
-import { Button } from "@mui/material";
-import { Bolt } from "@mui/icons-material";
 import { CTASection, FeatureSection, HeroSection, InteractiveSection } from "./sections";
 
 export default function Home() {
