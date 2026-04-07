@@ -34,7 +34,7 @@ const DeskNavbar = () => {
                     <a
                         key={link.path}
                         href={link.path}
-                        className={`text-sm font-sans font-semibold transition-all duration-200 cursor-pointer focus:outline-none ${location.pathname === link.path ? "text-amber-400 underline underline-offset-4 decoration-2" : "text-gray-300 hover:text-amber-400 hover:underline underline-offset-4 decoration-2"}`}>
+                        className={`text-sm font-sans font-semibold transition-all duration-200 cursor-pointer focus:outline-none ${location.pathname === link.path ? "text-amber-400" : "text-gray-300 hover:text-amber-400 hover:underline underline-offset-4 decoration-2"}`}>
                         {link.name}
                     </a>
                 ))}
