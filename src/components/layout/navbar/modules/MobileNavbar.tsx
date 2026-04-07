@@ -2,7 +2,7 @@ import { Menu, Bedtime, Clear, Sunny } from "@mui/icons-material";
 import { useState } from "react";
 import { useTheme } from "../../../../hook/useTheme";
 import { Link, useLocation } from "react-router-dom";
-import { navLinks } from "../../../../config/navLinksData";
+import { navLinks } from "../../../../config/navLinksData.data";
 import DevImage from "../../../../assets/dev.png";
 import { ProfileBoard } from "../../ui/ProfileBoard";
 

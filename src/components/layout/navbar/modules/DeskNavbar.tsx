@@ -1,5 +1,5 @@
 import { Bedtime, Sunny } from "@mui/icons-material";
-import { navLinks } from "../../../../config/navLinksData";
+import { navLinks } from "../../../../config/navLinksData.data";
 import { memo, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "../../../../hook/useTheme";
