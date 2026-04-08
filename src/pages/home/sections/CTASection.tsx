@@ -8,7 +8,7 @@ const CTASection: React.FC = () => {
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
                 Ready to level up your dev workflow?
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-gray-500 mb-8">
                 Join DevSphereOS and transform how you build modern applications.
             </p>
             <Button variant="contained" size="large" endIcon={<Bolt />}>
