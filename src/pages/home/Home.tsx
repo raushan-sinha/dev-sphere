@@ -2,7 +2,7 @@ import { CTASection, FeatureSection, FooterSection, HeroSection, InteractiveSect
 
 export default function Home() {
     return (
-        <div className="min-h-screen p-4">
+        <>
             {/* Hero Section */}
             <HeroSection />
 
@@ -17,10 +17,6 @@ export default function Home() {
 
             {/* Footer */}
             <FooterSection />
-        </div>
-    );
+        </>
+    )
 }
-
-
-
-
