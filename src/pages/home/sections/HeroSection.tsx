@@ -12,10 +12,10 @@ const HeroSection: React.FC = () => {
             />
 
             <h2 className="text-4xl md:text-6xl font-extrabold leading-tight max-w-4xl">
-                Build, Scale & Ship Faster with <span className="text-blue-500">DevSphereOS</span>
+                Build, Scale & Ship Faster with <span className="text-blue-500 font-mono">DevSphereOS</span>
             </h2>
 
-            <p className="text-gray-400 max-w-2xl text-lg">
+            <p className="text-gray-500 max-w-2xl text-lg">
                 A unified ecosystem for frontend engineers, AI builders, and modern dev teams.
                 Streamline workflows, boost performance, and ship production-ready products faster.
             </p>
@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
                 <Button variant="contained" size="large" startIcon={<RocketLaunch />}>
                     Launch Dashboard
                 </Button>
-                <Button variant="outlined" size="large" sx={{ color: "white", borderColor: "gray" }}>
+                <Button variant="outlined" size="large" sx={{ borderColor: "gray" }}>
                     View Demo
                 </Button>
             </div>
