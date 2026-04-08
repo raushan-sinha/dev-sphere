@@ -8,7 +8,7 @@ const InteractiveSection: React.FC = () => {
                 {statsData.map((item, idx) => (
                     <div key={idx}>
                         <h4 className="text-3xl font-bold text-blue-500">{item.value}</h4>
-                        <p className="text-gray-400 mt-2">{item.label}</p>
+                        <p className="text-gray-500 mt-2">{item.label}</p>
                     </div>
                 ))}
             </div>
