@@ -23,7 +23,7 @@ const DeskNavbar = () => {
             <div className="flex items-center gap-2">
                 <Link
                     to="/"
-                    className="text-gray-300 text-2xl font-sans font-bold tracking-wide cursor-pointer gradient-text">
+                    className="text-gray-300 text-2xl font-mono font-bold tracking-wide cursor-pointer gradient-text">
                     {title}
                 </Link>
             </div>
@@ -34,7 +34,7 @@ const DeskNavbar = () => {
                     <a
                         key={link.path}
                         href={link.path}
-                        className={`text-sm font-sans font-semibold transition-all duration-200 cursor-pointer focus:outline-none ${location.pathname === link.path ? "text-amber-400" : "text-gray-300 hover:text-amber-400 hover:underline underline-offset-4 decoration-2"}`}>
+                        className={`text-sm font-mono font-semibold transition-all duration-200 cursor-pointer focus:outline-none ${location.pathname === link.path ? "text-amber-400" : "text-gray-300 hover:text-amber-400 hover:underline underline-offset-4 decoration-2"}`}>
                         {link.name}
                     </a>
                 ))}
