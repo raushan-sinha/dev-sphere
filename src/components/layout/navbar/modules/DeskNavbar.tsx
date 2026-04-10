@@ -18,7 +18,7 @@ const DeskNavbar = () => {
         <nav
             role="navigation"
             aria-label="Main Navigation"
-            className="hidden md:flex fixed top-2 sm:top-3 lg:top-4 inset-x-0 z-50 mx-auto w-[95%] max-w-7xl items-center justify-between px-6 py-3 rounded-xl bg-[#101923]/90 border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.4)]">
+            className="hidden md:flex fixed top-2 sm:top-3 lg:top-4 inset-x-0 z-50 mx-auto w-[95%] max-w-7xl items-center justify-between px-6 py-3 rounded-xl bg-[#101923]/90 border border-cyan/5 shadow-[0_8px_30px_rgba(0,0,0,0.4)]">
             {/* Left - Logo */}
             <div className="flex items-center gap-2">
                 <Link

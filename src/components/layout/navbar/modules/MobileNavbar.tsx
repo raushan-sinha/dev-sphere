@@ -19,7 +19,7 @@ const MobileNavbar = () => {
             <nav
                 role="navigation"
                 aria-label="Mobile Navigation"
-                className="md:hidden fixed top-2 inset-x-0 z-50 mx-auto w-[95%] flex items-center justify-between px-4 py-3 rounded-xl bg-[#101923] backdrop-blur-md border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.4)]">
+                className="md:hidden fixed top-2 inset-x-0 z-50 mx-auto w-[95%] flex items-center justify-between px-4 py-3 rounded-xl bg-[#101923] backdrop-blur-md border border-cyan/5 shadow-[0_8px_30px_rgba(0,0,0,0.4)]">
                 {/* Left - Title */}
                 <Link
                     to="/"
