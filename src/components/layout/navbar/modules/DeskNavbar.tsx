@@ -4,7 +4,7 @@ import { memo, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "../../../../hook/useTheme";
 import DevImage from '../../../../assets/dev.png';
-import { ProfileBoard } from "../../ui/ProfileBoard";
+import { ProfileBoard } from "../../ui";
 
 //TODO: Navbar title -
 const title: string = "DevSphereOS";

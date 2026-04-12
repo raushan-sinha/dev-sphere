@@ -4,7 +4,7 @@ import { useTheme } from "../../../../hook/useTheme";
 import { Link, useLocation } from "react-router-dom";
 import { navLinks } from "../../../../config/navLinksData.data";
 import DevImage from "../../../../assets/dev.png";
-import { ProfileBoard } from "../../ui/ProfileBoard";
+import { ProfileBoard } from "../../ui";
 
 const title: string = "DevSphereOS";
 
