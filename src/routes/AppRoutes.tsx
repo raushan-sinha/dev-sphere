@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom';
-import MainLayout from '../components/layout/ui/MainLayout';
-import PageLoader from '../components/layout/ui/PageLoader';
+import { MainLayout, PageLoader } from '../components/layout/ui';
 
 //todo: Routes pages -
 const Home = lazy(() => import('../pages/home/Home'));
