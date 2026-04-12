@@ -5,9 +5,9 @@ import { useTheme } from '../../../hook/useTheme';
 
 const MainLayout: React.FC = () => {
     const { theme } = useTheme();
-
+    
     return (
-        <div className={`min-h-screen p-4 ${theme === 'light' ? 'bg-amber-50 text-black' : 'bg-gradient-to-br from-[#0f172a] to-[#020617] text-white'}`}>
+        <div className={`min-h-screen p-4 ${theme === 'light' ? 'bg-[#FAFAFA] text-black' : 'bg-[#0B0F19] text-white'}`}>
             <Navbar />
             <Outlet />
         </div>
