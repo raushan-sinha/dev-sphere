@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom';
 import { MainLayout, PageLoader } from '../components/layout/ui';
+import Services from '../pages/services/Services';
 
 //todo: Routes pages -
 const Home = lazy(() => import('../pages/home/Home'));
@@ -17,6 +18,7 @@ const AppRoutes: React.FC = () => {
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/analytics" element={<Analytics />} />
+                    <Route path='/services' element={<Services />} />
                 </Route>
             </Routes>
         </Suspense>
