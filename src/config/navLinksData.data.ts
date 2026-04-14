@@ -5,4 +5,5 @@ export const navLinks: NAVBARLINKSTYPE[] = [
     { name: "Projects", path: "/projects" },
     { name: "Blog", path: "/blog" },
     { name: "Analytics", path: "/analytics" },
+    { name: "Services", path: "/services" },
 ];
