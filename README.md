@@ -430,3 +430,25 @@ This page is built with a UI-first approach, ensuring scalability, reusability, 
 
 ## Summary
 The Blog Page UI is crafted to align with modern frontend standards, ensuring scalability, responsiveness, and an engaging user experience. It serves as a strong foundation for integrating dynamic blog content in production-grade applications.
+
+-------
+
+# Services Page – Engineering Team
+
+## Overview
+The **Services Page** represents the engineering strength behind the product. It showcases three engineers with their core roles and professional profiles, structured in a clean, responsive UI.
+
+This page is designed to build **credibility, transparency, and trust** by highlighting the team responsible for delivering high-quality software solutions.
+
+---
+
+## Features
+
+- Responsive card-based layout
+- Clean and minimal UI design
+- Optimized for all screen sizes (mobile, tablet, desktop)
+- Structured team representation
+- External profile linking support
+- Smooth hover interactions for better user experience
+
+---
