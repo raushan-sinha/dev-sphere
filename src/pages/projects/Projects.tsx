@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ScrollView } from "../../components/layout/ui";
 
 interface ReposData {
     name: string;
@@ -101,6 +102,9 @@ export default function Projects() {
                     />
                 </div>
             ))}
+
+            {/* Scroll Visibility */}
+            <ScrollView />
 
             {/* Error */}
             <div className="col-span-full text-center text-red-400 mt-6">
