@@ -37,7 +37,7 @@ export default function Projects() {
     return (
         <>
             <SEO
-                title="DevSphere Projects | Real-World Frontend & AI Builds"
+                title="DevSphereOS Projects | Real-World Frontend & AI Builds"
                 description="Discover real-world projects showcasing scalable frontend architecture, UI engineering, and AI-driven applications built with modern technologies."
             />
             

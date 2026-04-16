@@ -5,7 +5,7 @@ const Services = () => {
     return (
         <>
             <SEO
-                title="DevSphere Services | Frontend-UI/UX, AI & Full-stack Projects"
+                title="DevSphereOS Services | Frontend-UI/UX, AI & Full-stack Projects"
                 description="Professional services offering frontend engineering, AI product development, and scalable Full-stack products tailored for modern businesses."
             />
 

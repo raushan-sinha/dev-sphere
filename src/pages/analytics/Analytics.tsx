@@ -4,7 +4,7 @@ export default function Analytics() {
     return (
         <>
             <SEO
-                title="DevSphere Analytics | Performance & Insights Dashboard"
+                title="DevSphereOS Analytics | Performance & Insights Dashboard"
                 description="Analyze performance metrics, user engagement, and system insights through an interactive and data-driven analytics dashboard."
             />
 
