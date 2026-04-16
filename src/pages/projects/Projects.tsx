@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ScrollView } from "../../components/layout/ui";
+import { ScrollView } from "../../components/ui";
 
 interface ReposData {
     name: string;

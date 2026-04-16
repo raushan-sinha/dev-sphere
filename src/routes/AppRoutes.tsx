@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom';
-import { MainLayout, PageLoader } from '../components/layout/ui';
+import { MainLayout, PageLoader } from '../components/ui';
 import Services from '../pages/services/Services';
 
 //todo: Routes pages -
