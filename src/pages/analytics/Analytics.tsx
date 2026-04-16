@@ -8,7 +8,7 @@ export default function Analytics() {
                 description="Analyze performance metrics, user engagement, and system insights through an interactive and data-driven analytics dashboard."
             />
 
-            <section className="p-6 md:p-10 space-y-10">
+            <section className="p-6 md:p-10 mt-10 space-y-10">
 
                 {/* Header */}
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
